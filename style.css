@@ -1,0 +1,37 @@
+/* @media screen and (min-width: 360px) {
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex__item {
+    flex: 50%;
+    border-color: black;
+  }
+}
+@media screen and (min-width: 720px) {
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex__item {
+    flex: 25%;
+    border-color: black;
+  }
+} */
+
+/* GRID */
+@supports (display: grid) {
+  @media screen and (min-width: 360px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+  @media screen and (min-width: 720px) {
+    .grid {
+      grid-template-columns: repeat(4, 25%);
+    }
+  }
+}
